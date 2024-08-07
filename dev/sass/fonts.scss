@@ -1,7 +1,14 @@
-@font-face {
-    font-family: 'Gilroy-Regular';
-    src: url('./assets/fonts/Gilroy-Regular.woff') format('woff');
-    font-weight: normal; 
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+html {
+    font-family: $main_font, sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-display: swap;
+}
+
+.secondary_font {
+    font-family: $secondary_font, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
