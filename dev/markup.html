@@ -1,10 +1,10 @@
 @@include('templates/head.html')
 @@include('templates/header.html')
-<body class="wrapper">
-    <section class="page-markup">
-        <div class="container">
-            <h2>Buttons</h2>
-            <div class="buttons_cont">
+<body class="page-markup">
+    <div class="container">
+        <div class="markup_column">
+            <h2 class="markup_title">Buttons</h2>
+            <div class="markup_sub">
                 <button class="btn">Order Today</button>
                 <button class="btn primary_outline">Order Now</button>
                 <button class="btn primary_outline color_white">Order Today</button>
@@ -14,7 +14,46 @@
                 <button class="btn_secondary secondary_lg">Subscribe</button>
             </div>
         </div>
-    </section>
+        <div class="markup_column">
+            <h2 class="markup_title">Titles</h2>
+            <div class="markup_sub">
+                <h2 class="title">The Author’s Book</h2>
+                <h2 class="title title__after_blue">Get The Best Updates</h2>
+                <h2 class="title title__after_start">About the Author</h2>
+                <h2 class="title title__after_start text_left">Words From Our Readers</h2>
+                <h2 class="title title__after_start text_white text_lg">Get Book Copy Today!</h2>
+                <h3 class="subtitle h3">Atomic One’s</h3>
+                <h4 class="subtitle h4">Amazen Corp.</h4>
+                <h4 class="subtitle h4 text_white">Explore</h4>
+                <h5 class="subtitle h5 text_white subtitle_after">Welcome to Pages!!!</h5>
+            </div>
+        </div>
+        <div class="markup_column">
+            <h2 class="markup_title">List</h2>
+            <div class="markup_sub">
+                <ul class="list_one">
+                    <li>Printed Book</li>
+                    <li>Printed Book</li>
+                    <li>Printed Book</li>
+                </ul>
+                <ul class="list_one text_white">
+                    <li>Pages:</li>
+                    <li>Pages:</li>
+                    <li>Pages:</li>
+                </ul>
+                <ul class="list_one list_sm">
+                    <li>Pages:</li>
+                    <li>Pages:</li>
+                    <li>Pages:</li>
+                </ul>
+                <ul class="list_two">
+                    <li><span class="span"></span>Home</li>
+                    <li><span class="span"></span>Home</li>
+                    <li><span class="span"></span>Home</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 @@include('templates/footer.html')
 
