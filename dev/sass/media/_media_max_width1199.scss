@@ -1,2 +1,12 @@
 @media screen and (max-width: 1199px) {
+//___________header______________
+    .page-header {
+        & .container {
+            & .header_left {
+                & .media_cont {
+                    display: none;
+                }
+            }
+        }
+    }
 }

@@ -1,3 +1,15 @@
 @media (min-width: 1025px) {
-
+//___________header______________
+    .page-header {
+        & .container {
+            & .header_right {
+                & .burger {
+                    display: none;
+                }
+                & .header_nav {
+                    display: flex;
+                }
+            }
+        }
+    }
 }

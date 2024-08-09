@@ -8,6 +8,7 @@ button {
     cursor: pointer;
     font-family: $main_font;
     text-align: center;
+    border: none;
     &:hover {
         transform: scale(1.05);
         transition: .2s;
@@ -30,6 +31,26 @@ a {
     max-width: 100%;
     height: auto;
 }
+
+body.overflow_hidden:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #1b376459;
+    background-color: $blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(6px);
+    z-index: 0;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+
+
 
 .page-markup {
     background-color: rgb(220, 218, 218);

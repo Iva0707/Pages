@@ -1,4 +1,17 @@
 @media screen and (max-width: 1024px) {
+    .page-header {
+        & .container {
+            & .header_right {
+                gap: 20px;
+                & .header_nav {
+                    display: none;
+                }
+                & .header_btn {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 
