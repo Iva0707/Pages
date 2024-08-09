@@ -1,0 +1,25 @@
+.page-first {
+    background-color: $blue_dark;
+    & .container {
+        display: flex;
+        & .subtitle {
+            text-align: left;
+        }
+        & .first_screen_title {
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 122%;
+            letter-spacing: 0.02em;
+            color: $white;
+        }
+        & .first_screen_content {
+            font-size: 18px;
+            line-height: 158%;
+            color: $blue;
+        }
+        & .list_one {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

@@ -42,19 +42,21 @@
                 gap: 48px;
                 align-items: center;
                 justify-content: center;
-                & a {
-                    color: $blue_light;
-                    font-size: 17px;
-                    line-height: 150%;
-                    letter-spacing: 0.01em;
-                    font-weight: 300;
-                    max-width: 130px;
+                & li {
                     text-align: center;
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        color: $yellow;
-                        transition: .2s;
+                    & a {
+                        color: $blue_light;
+                        font-size: 17px;
+                        line-height: 150%;
+                        letter-spacing: 0.01em;
+                        font-weight: 300;
+                        max-width: 130px;
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            color: $yellow;
+                            transition: .2s;
+                        }
                     }
                 }
                 &.show {
@@ -69,8 +71,10 @@
                     right: 0;
                     padding: 0 0 20px;
                     z-index: 1;
-                    & a {
-                        padding: 5px 40px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    & li a {
+                        padding: 5px 0;
                         max-width: 100%;
                     }
                     & .media_cont {

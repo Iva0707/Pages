@@ -8,10 +8,10 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('active')
     if (burger.classList.contains('active')) {
         menu.innerHTML = (`  
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Contact Us</a>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact Us</a></li>
                     
                     <div class="media_cont">
                         <a href="#">
@@ -25,7 +25,9 @@ burger.addEventListener('click', () => {
                         </a>
                     </div>
                     
-                    <button class="btn">Order Today</button>`)
+                    <div class="btn_row">
+                        <button class="btn">Order Today</button>
+                    </div>`)
         menu.classList.add('show')
         body.classList.add('overflow_hidden')
     } else {
@@ -48,12 +50,21 @@ menu.addEventListener('click', (event) => {
     }
 })
 
+function resize () {
+    const screenWidth = window.innerWidth
+    if (screenWidth > 1024) {
+        closeMenu ()
+    }
+}
+window.addEventListener('resize', resize)
+resize()
+
 function closeMenu () {
     menu.innerHTML = (`          
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Pages</a>
-        <a href="#">Contact Us</a>`)
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact Us</a></li>`)
     menu.classList.remove('show')
     body.classList.remove('overflow_hidden')
     burger.classList.remove('active')
