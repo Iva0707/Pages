@@ -1,8 +1,8 @@
 .page-first {
     background-color: $blue_dark;
-    margin-bottom: 130px;
-    // height: calc(100vh - 106px);
+    // margin-bottom: 130px;
     & .container {
+        height: calc(100vh - 306px);
         display: flex;
         align-items: center;
         & .content_container {

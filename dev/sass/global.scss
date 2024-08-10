@@ -35,6 +35,24 @@ ol {
     }
 }
 
+body {
+    color: $blue_dark;
+    &.overflow_hidden:before {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(6px);
+        background-color: #b4c7e768;
+        z-index: 1;
+    }
+}
+
+section {
+    padding: 120px 0;
+}
 ::selection {
     color: $blue_dark;
     background-color: $blue;
@@ -50,21 +68,6 @@ ol {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
-
-body {
-    color: $blue_dark;
-    &.overflow_hidden:before {
-        content: "";
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        backdrop-filter: blur(6px);
-        background-color: #b4c7e768;
-        z-index: 1;
-    }
 }
 
 .overflow_hidden {
@@ -157,6 +160,7 @@ body {
         }
     }
     &.title__after_start {
+        text-align: left;
         &::after {
             left: calc(0px + 29px);
         }

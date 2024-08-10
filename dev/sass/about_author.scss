@@ -1,0 +1,119 @@
+.page-about_author {
+    background-color: $blue_light;
+    // margin-bottom: 200px;
+    & .container {
+        max-width: 1370px;
+        padding: 0 30px 0 40px;
+        & .about_author_row {
+            display: flex;
+            gap: 200px;
+            align-items: center;
+            & .about_author_img {
+                width: 50%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin-left: -30px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    border: 10px solid $yellow;
+                    top: 50px;
+                    left: 50px;
+                    box-sizing: border-box;
+                }
+                & img {
+                    object-fit: cover;
+                    width: 100%;
+                    z-index: 1;
+                }
+            }
+            & .about_author_content {
+                width: 50%;
+                & .title {
+                    margin-bottom: 59px;
+                }
+                & .about_author_description {
+                    font-size: 19px;
+                    line-height: 180%;
+                    color: $grey;
+                    font-family: $secondary_font;
+                    margin-bottom: 34px;
+                }
+                & .statistics_row {
+                    display: flex;
+                    margin-bottom: 55px;
+                    flex-wrap: wrap;
+                    & div:first-of-type {
+                        padding: 0px 0px 0px 10px;
+                    }
+                    & div:last-of-type {
+                        border: none;
+                    }
+                    & .statistics_item {
+                        width: calc(100% / 3);
+                        padding: 0px 0px 0 30px;
+                        position: relative;
+                        border-right: 1px solid $yellow;
+                        & span {
+                            font-size: 54px;
+                            line-height: 143%;
+                        }
+                        & p {
+                            font-size: 17px;
+                            line-height: 127%;
+                            color: $grey;
+                            font-family: $secondary_font;
+                        }
+                    }
+                }
+                & .qr_row {
+                    display: flex;
+                    align-items: center;
+                    background-color: $blue_dark;
+                    padding: 15px 20px;
+                    max-width: 484px;
+                    gap: 40px;
+                    & .qr_img {
+                        width: 30%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & img {
+                            object-fit: cover;
+                            width: 100%;
+                        }
+                    }
+                    & .qr_info {
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        & .qr_name {
+                            font-size: 22px;
+                            line-height: 120%;
+                            color: $yellow;
+                        }
+                        & .qr_mail,
+                        & .qr_phone {
+                            font-size: 18px;
+                            line-height: 158%;
+                            letter-spacing: 0.01em;
+                            color: $blue;
+                            font-family: $secondary_font;
+                            & a {
+                                color: $blue;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
