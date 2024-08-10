@@ -35,6 +35,11 @@ ol {
     }
 }
 
+::selection {
+    color: $blue_dark;
+    background-color: $blue;
+}
+
 .img_fluid {
     max-width: 100%;
     height: auto;
@@ -272,6 +277,21 @@ body {
 }
 
 
+// _______markup fancybox_____
+
+.fancybox__container {
+    --fancybox-bg: #b4c7e7cc;
+}
+
+.fancybox__caption {
+    text-align: center;
+    color: $blue_dark;
+    font-size: 20px;
+}
+
+.is-compact .fancybox__caption {
+    color: $white;
+}
 
 
 // _______markup settings_____

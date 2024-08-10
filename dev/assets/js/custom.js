@@ -69,3 +69,7 @@ function closeMenu () {
     body.classList.remove('overflow_hidden')
     burger.classList.remove('active')
 }
+
+
+
+Fancybox.bind("[data-fancybox]", {});

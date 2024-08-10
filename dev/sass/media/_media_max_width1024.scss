@@ -1,4 +1,6 @@
 @media screen and (max-width: 1024px) {
+//___________header______________
+
     .page-header {
         & .container {
             & .header_right {
@@ -12,6 +14,22 @@
             }
         }
     }
+
+//___________fpage-products______________
+
+    .page-products {
+        & .container {
+            & .title {
+                margin-bottom: 80px;
+            }
+            & .products_row {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+    }
+
 }
 
 

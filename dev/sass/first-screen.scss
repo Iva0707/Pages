@@ -1,13 +1,15 @@
 .page-first {
     background-color: $blue_dark;
+    margin-bottom: 130px;
+    // height: calc(100vh - 106px);
     & .container {
         display: flex;
-        height: calc(100vh - 106px);
         align-items: center;
-        // gap: 75;
         & .content_container {
             max-width: 50%;
             padding-right: 75px;
+            padding-top: 50px;
+            padding-bottom: 50px;
             & .subtitle {
                 text-align: left;
                 margin-bottom: 10px;
