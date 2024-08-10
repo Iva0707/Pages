@@ -9,4 +9,16 @@
             }
         }
     }
+
+
+    //___________first screen______________
+    .page-first {
+        & .container {
+            & .content_container {
+                padding-right: 25px;
+            }
+        }
+    }
+    
+
 }
