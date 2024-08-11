@@ -1,0 +1,42 @@
+.page-subscribe {
+    & .container {
+        & .subscribe_row {
+            background-color: $yellow;
+            box-shadow: 0 0 19px 0 #0000002e;
+            padding: 100px 150px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & .title {
+                margin-bottom: 51px;
+            }
+            & .subscribe_description {
+                font-size: 18px;
+                line-height: 158%;
+                text-align: center;
+                font-family: $secondary_font;
+                max-width: 550px;
+                margin-bottom: 50px;
+            }
+            & .input_row {
+                display: flex;
+                gap: 16px;
+                width: 100%;
+                & input {
+                    width: 100%;
+                    border: 1px solid $blue_light;
+                    padding: 20px 40px;
+                    font-size: 18px;
+                    line-height: 170%;
+                    letter-spacing: 0.01em;
+                    font-family: $secondary_font;
+                    color: $blue_dark;
+                    &::placeholder {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

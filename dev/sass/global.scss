@@ -16,6 +16,7 @@ button {
 }
 
 a {
+    cursor: pointer;
     color: $white;
     text-decoration: none;
     font-family: $secondary_font;
@@ -49,6 +50,11 @@ body {
 
 section {
     padding: 120px 0;
+}
+
+input {
+    outline: none;
+    border: none;
 }
 ::selection {
     color: $blue_dark;
@@ -244,9 +250,12 @@ section {
     line-height: 170%;
     letter-spacing: 0.01em;
     color: $blue;
-    & li {
+    & li,
+    & a {
         position: relative;
         padding-left: 20px;
+        display: block;
+        color: $blue;
         & .span {
             width: 2.5px;
             height: 2.5px;
