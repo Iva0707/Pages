@@ -1,0 +1,68 @@
+.page-articles {
+    background-color: $blue_light;
+    & .container {
+        & .title {
+            margin-bottom: 96px;
+        }
+        & .articles_row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            & .articles_column {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                background-color: $white;
+                border-radius: 5px;
+                overflow: hidden;
+                box-shadow: 0 0 13px 0 #00000012;
+                & .articles_img {
+                    height: 350px;
+                    overflow: hidden;
+                    & img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 350px;
+                    }
+                }
+                & .articles_content {
+                    padding: 25px 30px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    & .subtitle {
+                        text-align: left;
+                        margin-bottom: 19px;
+                        line-height: 140%;
+                        text-transform: none;
+                    }
+                    & .articles_description {
+                        font-size: 19px;
+                        line-height: 160%;
+                        color: $grey;
+                        font-family: $secondary_font;
+                        margin-bottom: 13px;
+                        flex: 1;
+                    }
+                    & .content_row {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 50px;
+                        margin-top: auto;
+                        & .btn_row {
+                            flex-direction: column;
+                        }
+                        & .articles_date {
+                            text-align: right;
+                            font-size: 16px;
+                            line-height: 159%;
+                            font-family: $secondary_font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

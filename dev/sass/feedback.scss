@@ -1,0 +1,99 @@
+.page-feedback {
+    & .container {
+        & .feedback_row {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            & .feedback_content {
+                width: 37%;
+                & .title {
+                    margin-bottom: 59px;
+                }
+                & .feedback_description {
+                    font-size: 19px;
+                    line-height: 180%;
+                    color: $grey;
+                    font-family: $secondary_font;
+                    margin-bottom: 25px;
+                }
+                & .feetback_ratings_row {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    & .ratings_stars {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        & .ratings_level {
+                            font-size: 22px;
+                            line-height: 120%;
+                            margin-left: 5px;
+                        }
+                    }
+                    & .ratings_title {
+                        font-size: 18px;
+                        line-height: 158%;
+                        font-family: $secondary_font;
+                    }
+                }
+            }
+            & .feedback_customers {
+                width: 63%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                height: 700px;
+                overflow: hidden;
+                & .customers_item {
+                    background-color: $blue_dark;
+                    width: 381px;
+                    padding: 25px 35px;
+                    box-shadow: 0 0 13px 0 #00000012;
+                    & .customers_row {
+                        display: flex;
+                        gap: 17px;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        & .customers_img {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: auto;
+                            overflow: hidden;
+                            border-radius: 50px;
+                            & img {
+                                object-fit: cover;
+                                width: 85px;
+                                height: 85px;
+                            }
+                        }
+                        & .customers_info {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            & .ratings_stars {
+                                display: flex;
+                                gap: 3px;
+                            }
+                        }
+                    }
+                    & .customers_title {
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 150%;
+                        color: $white;
+                        margin-bottom: 13px;
+                    }
+                    & .customer_feedback {
+                        font-size: 18px;
+                        line-height: 160%;
+                        color: $blue;
+                        font-family: $secondary_font;
+                    }
+                }
+            }
+        }
+    }
+}
