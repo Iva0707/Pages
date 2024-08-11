@@ -1,0 +1,37 @@
+.page-order {
+    background-color: $blue_dark;
+    & .container {
+        & .order_row {
+            display: flex;
+            align-items: center;
+            gap: 130px;
+            & .order_content {
+                width: 50%;
+                & .title {
+                    margin-bottom: 54px;
+                }
+                & .order_description {
+                    font-size: 19px;
+                    line-height: 150%;
+                    color: $blue;
+                    font-family: $secondary_font;
+                    margin-bottom: 27px;
+                }
+                & .btn_row {
+                    justify-content: left;
+                }
+            }
+            & .order_img {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                & img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
