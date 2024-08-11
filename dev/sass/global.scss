@@ -9,10 +9,7 @@ button {
     font-family: $main_font;
     text-align: center;
     border: none;
-    &:hover {
-        transform: scale(1.05);
-        transition: .2s;
-    }
+    @extend %hover;
     &:focus {
         outline: none;
     }

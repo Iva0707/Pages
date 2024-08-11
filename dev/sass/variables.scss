@@ -11,3 +11,10 @@ $grey: #969AA0;
 
 $main_font: 'Cardo';
 $secondary_font: 'Inter';
+
+%hover {
+    &:hover {
+        transform: scale(1.05);
+        transition: .2s;
+    }
+}

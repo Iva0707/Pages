@@ -1,0 +1,77 @@
+.page-description {
+    background-color: $blue_light;
+    & .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .title {
+            margin-bottom: 95px;
+        }
+        & .description_row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 30px;
+            margin-bottom: 70px;
+            & .description_item {
+                background-color: $white;
+                width: 635px;
+                padding: 40px;
+                & .subtitle {
+                    text-align: left;
+                    margin-bottom: 21px;
+                }
+                & .description_content {
+                    font-size: 19px;
+                    line-height: 170%;
+                    color: $grey;
+                    font-family: $secondary_font;
+                    margin-bottom: 11px;
+                }
+                & .list_one {
+                    display: flex;
+                    gap: 50px;
+                    & .list_item {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        & li {
+                            margin-right: -10px;
+                        }
+                        & span {
+                            font-size: 17px;
+                            line-height: 159%;
+                            color: $grey;
+                            font-family: $secondary_font;
+                            padding-left: 26px;
+                        }
+                    }
+                }
+            }
+        }
+        & .btn_row {
+            margin-bottom: 35px;
+        }
+        & .description_link_row {
+            font-family: $secondary_font;
+            & a {
+                font-size: 18px;
+                line-height: 151%;
+                text-align: center;
+                color: $grey;
+                display: inline-block;
+                @extend %hover;
+            }
+            & p {
+                font-size: 18px;
+                line-height: 158%;
+                letter-spacing: 0.01em;
+                text-align: center;
+                & a {
+                    font-size: 19px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
