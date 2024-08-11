@@ -277,6 +277,23 @@ section {
     }
 }
 
+.star {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid $yellow;
+    &.full_star {
+        background-color: $yellow;
+    }
+    &.half_star {
+        background: linear-gradient(to right, $yellow 50%, transparent 50%);
+    }
+    &.star_small {
+        width: 13px;
+        height: 13px;
+    }
+}
+
 
 // _______markup fancybox_____
 
